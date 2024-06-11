@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "email": "duc@gmail.com",
+      "password": "$2a$10$tOQtBjNK5644i20DuFykQe9go8lp6GK6.gxbrvSyUmgFfiSKC7KWq",
+      "id": 1
+    },
+    {
+      "email": "duc111@gmail.com",
+      "password": "$2a$10$ga2See6uz1I/H/lOle/Ip.F.wg3C94tyC2P4aWhVZQDguBNy0qZyq",
+      "id": 2
+    },
+    {
+      "email": "duc14311@gmail.com",
+      "password": "$2a$10$.aq/0Z48g8eR3qylPTQ2t.Oyr9PG1x8v8A/PasS4h0b0Aagj9oZlS",
+      "id": 3
+    },
+    {
+      "email": "haideptrai@gmail.com",
+      "password": "$2a$10$CkNztqYcZeOPWWf2XKlggeb5PkWP41o9VyX8A36nkKCTrduiUC7U.",
+      "id": 4
+    },
+    {
+      "email": "vao@gmail.com",
+      "password": "$2a$10$45enkdgHH/FNiQU27.39u.UJNlI.ULN2f22eEfHdZ3FCNShH1OZym",
+      "id": 5
+    },
+    {
+      "email": "ducnhu261203@gmail.com",
+      "password": "$2a$10$4MgUfJbgSz3wv5IyGFfUtOTaGSIyzy09byO7UgivKW0OUlu22we9i",
+      "id": 6
+    }
+  ]
+}

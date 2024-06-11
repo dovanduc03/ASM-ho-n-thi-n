@@ -1,0 +1,29 @@
+<div class="container">
+    <!-- 
+        * khai báo tên form: #tenForm="ngForm"
+        * bắt sự kiện submit: (ngSubmit)=tenHam(tenForm.value)
+        => tenFrom và tenHam không được trùng nhau -->
+    <form #edit="ngForm" (ngSubmit)="onEdit(edit.value)">
+        <div>
+            <label for="" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" [(ngModel)]="oldProject.name">
+            <!-- khai báo name="" và ngModel cho các ô input -->
+        </div>
+        <div>
+            <label for="" class="form-label">Description</label>
+            <input type="text" class="form-control" name="description" [(ngModel)]="oldProject.description">
+            <!-- khai báo name="" và ngModel cho các ô input -->
+        </div>
+        <div>
+            <label for="" class="form-label">Price</label>
+            <input type="number" class="form-control" name="price" [(ngModel)]="oldProject.price">
+            <!-- khai báo name="" và ngModel cho các ô input -->
+        </div>
+        <div>
+            <label for="" class="form-label">Image</label>
+            <input type="text" class="form-control" name="image" [(ngModel)]="oldProject.image">
+            <!-- khai báo name="" và ngModel cho các ô input -->
+        </div>
+        <input type="submit" class="btn btn-success mt-2 mx-auto d-block"  value="Sửa">
+    </form>
+</div>

@@ -1,0 +1,91 @@
+<div class="container">
+    <form #create="ngForm" (ngSubmit)="onCreate(create.value)">
+        <!-- Trường Name -->
+        <div>
+            <label for="name" class="form-label">Tên</label>
+            <input 
+                type="text"     
+                class="form-control" 
+                name="name"
+                id="name"
+                #errName="ngModel"
+                ngModel 
+                required
+                minlength="3"
+            >
+            <p *ngIf="errName.invalid && errName.dirty" class="text-danger">
+                Dữ liệu không hợp lệ
+            </p>
+            <p *ngIf="errName.errors?.['required'] && errName.dirty" class="text-danger">
+                Tên không được bỏ trống
+            </p>
+            <p *ngIf="errName.errors?.['minlength'] && errName.dirty" class="text-danger">
+                Tên không được ngắn hơn 3 ký tự
+            </p>
+        </div>
+        <!-- Trường Description -->
+        <div>
+            <label for="description" class="form-label">Mô tả</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                name="description" 
+                id="description" 
+                ngModel
+                required
+                minlength="10"
+            >
+            <p *ngIf="description.invalid && description.dirty" class="text-danger">
+                Dữ liệu không hợp lệ
+            </p>
+            <p *ngIf="description.errors?.['required'] && description.dirty" class="text-danger">
+                Mô tả không được bỏ trống
+            </p>
+            <p *ngIf="description.errors?.['minlength'] && description.dirty" class="text-danger">
+                Mô tả không được ngắn hơn 10 ký tự
+            </p>
+        </div>
+        <!-- Trường Price -->
+        <div>
+            <label for="price" class="form-label">Giá</label>
+            <input 
+                type="number" 
+                class="form-control" 
+                name="price" 
+                id="price" 
+                ngModel
+                required
+                min="0"
+            >
+            <p *ngIf="price.invalid && price.dirty" class="text-danger">
+                Dữ liệu không hợp lệ
+            </p>
+            <p *ngIf="price.errors?.['required'] && price.dirty" class="text-danger">
+                Giá không được bỏ trống
+            </p>
+            <p *ngIf="price.errors?.['min'] && price.dirty" class="text-danger">
+                Giá không được nhỏ hơn 0
+            </p>
+        </div>
+        <!-- Trường Image -->
+        <div>
+            <label for="image" class="form-label">Hình ảnh</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                name="image" 
+                id="image" 
+                ngModel
+                required
+            >
+            <p *ngIf="image.invalid && image.dirty" class="text-danger">
+                Dữ liệu không hợp lệ
+            </p>
+            <p *ngIf="image.errors?.['required'] && image.dirty" class="text-danger">
+                Hình ảnh không được bỏ trống
+            </p>
+        </div>
+        <!-- Nút Submit -->
+        <input type="submit" class="btn btn-success mt-2 mx-auto d-block" value="Thêm mới">
+    </form>
+</div>

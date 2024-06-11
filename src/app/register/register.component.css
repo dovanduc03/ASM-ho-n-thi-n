@@ -1,0 +1,28 @@
+/* Kiểu CSS của bạn có thể như sau */
+.container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .form-label {
+    margin-top: 10px;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .register-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .btn-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+  

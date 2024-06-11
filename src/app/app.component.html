@@ -1,0 +1,20 @@
+
+
+<div class="admin-container">
+  <div class="sidebar">
+    <img src="https://www.riotgames.com/darkroom/500/66940d3cc0dce2a8fa93da187f00026f:95f87d36199bdf1b5a205152f1ac7561/val-logo-600x125.png" class="logo" height="100%">
+      
+      <ul>
+          <li><a routerLink="/home" routerLinkActive="active">Trang Chủ</a></li>
+          <li><a routerLink="/list" routerLinkActive="active">Danh sách</a></li>
+          <li><a routerLink="/create" routerLinkActive="active">Thêm sản phẩm</a></li>
+          <li><a routerLink="/register" routerLinkActive="active">Đăng ký</a></li>
+          <!-- Update the route for logout if needed -->
+          <button (click)="logout()">Đăng xuất</button>
+      </ul>
+  </div>
+  <div class="main-content">
+      <!-- Router outlet to render child components -->
+      <router-outlet></router-outlet>
+  </div>
+</div>
